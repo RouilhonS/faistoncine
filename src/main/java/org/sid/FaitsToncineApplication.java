@@ -52,6 +52,7 @@ public class FaitsToncineApplication implements CommandLineRunner {
 //genre.save(new Genre("Drame"));
 //		
 //		
+//
 //		Categorie cg=categorie.save(new Categorie("une idée jamais vue"));
 		
 //		idee.save(new Idee(new Date(),"Paul, est marié à Sali. Tout irait pour le mieux dans leur vie s’ils arrivaient à avoir un "
