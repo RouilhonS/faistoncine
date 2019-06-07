@@ -22,21 +22,21 @@ public class UtilisateursServices {
 
     @RequestMapping(value="/utilisateurs", method= RequestMethod.POST)
     public Utilisateur SaveUtilisateur(@Valid @RequestBody Utilisateur i ){
-        return ideeRepository.save(i);
+        return utilisateurRepository.save(i);
     }
 
     @RequestMapping(value="/utilisateurs", method=RequestMethod.GET)
     public List<Utilisateur> getUtilisateurs(){
-        return ideeRepository.findAll();
+        return utilisateurRepository.findAll();
     }
 
     @RequestMapping(value="/utilisateurs/{id}", method=RequestMethod.GET)
     public Utilisateur getUtilisateur(@PathVariable Long id){
-        return ideeRepository.findById(id).orElse(null);
+        return utilisateurRepository.findById(id).orElse(null);
     }
 
     @RequestMapping(value="/utilisateurs/{id}", method=RequestMethod.PUT)
     public Utilisateur updateUtilisateur(@RequestBody Utilisateur i){
-        return ideeRepository.save(i);
+        return utilisateurRepository.save(i);
     }
 }
